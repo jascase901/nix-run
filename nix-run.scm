@@ -3,9 +3,11 @@
 
 (define programs* '((blender . ((deps . (blender python35))
                                 (run . (blender))))
-                    (godot . ((deps . (godot))
+                    (godot   . ((deps . (godot))
                               (run . (godot.x11.tools.64))))
-                    (zap   . ((deps . (jdk7 zap))
+                    (qgis    . ((deps . (qgis saga python))
+                              (run . (qgis))))
+                    (zap     . ((deps . (jdk7 zap))
                                 (run . (zap))))))
 
 (define (get-program program-name programs)
